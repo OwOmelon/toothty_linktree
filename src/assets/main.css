@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+	--color-night-light: #ebe9fc;
+	--color-night-dark: #010104;
+	--color-night-prim: #aaa6d1;
+	--color-night-sec: #020024;
+	--color-night-acc: #0600c2;
+
+	--font-gsans: "General Sans", sans-serrif;
+	--font-anton: "Anton", serif;
+
+	--breakpoint-mobile-m: 23.4375rem;
+	--breakpoint-mobile-l: 26.5625rem;
+}
+
+@utility debug-outline-* {
+	outline-color: --value(color);
+	outline-color: --value([ *]);
+	@apply outline-2 outline-solid;
+}
+
+*,
+*::before,
+*::after {
+	scrollbar-width: thin;
+}
+
+body {
+	@apply text-night-light bg-night-dark font-gsans;
+}
+
+#app {
+	@apply flex min-h-screen items-center justify-center flex-col gap-5;
+}
+
+#app::before {
+	content: "";
+	background-image: radial-gradient(
+		circle at 50% 100%,
+		#11306d,
+		#091939 33%,
+		theme(colors.night.dark)
+	);
+
+	@apply pointer-events-none absolute top-0 left-0 -z-[999] h-full w-full opacity-75;
+}
