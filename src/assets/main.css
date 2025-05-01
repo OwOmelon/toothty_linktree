@@ -15,7 +15,6 @@
 }
 
 @utility debug-outline-* {
-	outline-color: --value(color);
 	outline-color: --value([ *]);
 	@apply outline-2 outline-solid;
 }
