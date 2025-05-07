@@ -30,10 +30,13 @@ body {
 }
 
 #app {
-	@apply flex min-h-screen items-center justify-center flex-col gap-5;
+	@apply flex min-h-screen flex-col items-center justify-center gap-5;
 }
 
 #app::before {
+	/*  PUT GRADIENT BACKGROUND HERE FOR OPACITY */
+	/* TOLLAZY, IT WORKS, WHATEVER */
+
 	content: "";
 	background-image: radial-gradient(
 		circle at 50% 100%,
@@ -43,4 +46,13 @@ body {
 	);
 
 	@apply pointer-events-none absolute top-0 left-0 -z-[999] h-full w-full opacity-75;
+}
+
+#app::after {
+	content: "";
+	background-image: url("@/assets/dot-grid.png");
+	background-size: 80%;
+	background-position: center;
+
+	@apply pointer-events-none absolute top-0 left-0 -z-[999] h-full w-full opacity-50 mix-blend-color-dodge;
 }
