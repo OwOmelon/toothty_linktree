@@ -4,13 +4,19 @@ import LogoContainer from "@/components/logo/LogoContainer.vue";
 import Desc from "@/components/Desc.vue";
 import Links from "@/components/Links.vue";
 
-import ValoBg from "@/components/ValoBg.vue"
+import YoruJapaneseText from "@/designs/bg/YoruJapaneseText.vue";
+import YoruDesc from "@/designs/bg/YoruDesc.vue";
+import ColumnOfEllipses from "@/designs/bg/ColumnOfEllipses.vue";
+
+import ValoBg from "@/components/ValoBg.vue";
 import GrainOverlay from "@/components/GrainOverlay.vue";
 </script>
 
 <template>
+	<ValoBg />
+
 	<div
-		class="drop-shadow-night-light/25 lg:rows-[auto_auto] grid w-[34.75em] grid-cols-[61%_auto] gap-[1.25em] text-[min(2.5vw,_1rem)] drop-shadow-[0_0_0.25em] lg:w-[54.375em] lg:grid-cols-[33.33%_min-content_auto] lg:gap-0 lg:text-base"
+		class="drop-shadow-night-light/25 lg:rows-[auto_auto] relative isolate grid w-[34.75em] grid-cols-[61%_auto] gap-[1.25em] text-[min(2.5vw,_1rem)] drop-shadow-[0_0_0.25em] lg:w-[54.375em] lg:grid-cols-[33.33%_min-content_auto] lg:gap-0 lg:text-base"
 	>
 		<Pfp />
 		<LogoContainer />
@@ -18,7 +24,11 @@ import GrainOverlay from "@/components/GrainOverlay.vue";
 		<Desc />
 	</div>
 
-	<ValoBg />
+
+	<YoruJapaneseText />
+	<YoruDesc />
+	<ColumnOfEllipses />
+
 	<GrainOverlay />
 </template>
 
