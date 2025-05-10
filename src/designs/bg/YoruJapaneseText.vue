@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="text-sm absolute -z-10 flex -translate-x-65 -translate-y-25 flex-col gap-[3.125em] opacity-25 mix-blend-color-dodge"
+		class="design absolute -z-10 flex -translate-x-65 -translate-y-25 flex-col gap-[3.125em] text-sm opacity-25 mix-blend-color-dodge"
 	>
 		<svg
 			width="41.625em"

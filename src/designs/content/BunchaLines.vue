@@ -5,7 +5,7 @@
 		viewBox="0 0 44 470"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
-		class="absolute row-[1/3] col-[1/2] -translate-x-[120%]"
+		class="design absolute col-[1/2] row-[1/3] -translate-x-[120%]"
 	>
 		<path
 			d="M32.3678 437.586L32.3678 470L30.3448 470L30.3448 437.586L32.3678 437.586Z"

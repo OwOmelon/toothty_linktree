@@ -1,5 +1,5 @@
 <template>
-	<div class="bg absolute w-5 h-180 translate-y-15 mix-blend-color-dodge opacity-25 -translate-x-80 -z-10">
+	<div class="design bg absolute w-5 h-180 translate-y-15 mix-blend-color-dodge opacity-25 -translate-x-80 -z-10">
 		
 	</div>
 </template>
